@@ -8,9 +8,9 @@
 * [Antのメモリを大きくしないとビルドできないことがあるらしい](http://shiraji.github.io/blog/2016/07/14/how-to-kontribute/)
 
 ## 便利なリンク集
+* [JetBrains/kotlinの開発環境の作り方](https://github.com/JetBrains/kotlin#build-environment-requirements)
 * [Up For Grabsで絞り込んだIssueリスト](https://youtrack.jetbrains.com/oauth?state=%2Fissues%2FKT%3Fq%3Dtag:%2520%257BUp%2520For%2520Grabs%257D%2520%2523Unresolved%2520sort%2520by:%2520created%2520desc%2520)
    * ここにあるIssueは解決したプルリクエストを送ることで、コントリビュートすることができます。
-* [JetBrains/kotlinの開発環境の作り方](https://github.com/JetBrains/kotlin#build-environment-requirements)
 * [Kotlin公式Slackのkontributorsチャンネル](https://kotlinlang.slack.com/messages/C0BUHC9HD/)
 * [Shiraji's Blog/How to Kontribute](http://shiraji.github.io/blog/2016/07/14/how-to-kontribute/)  
    * 日本のKontributeされている方のブログ記事です。自分はこれを見て始めました。最高です。
