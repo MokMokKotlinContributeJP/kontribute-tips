@@ -18,5 +18,5 @@
    * ここにあるIssueは解決したプルリクエストを送ることで、コントリビュートすることができます。
 * [Kotlin公式Slackのkontributorsチャンネル](https://kotlinlang.slack.com/messages/C0BUHC9HD/)
 * [Shiraji's Blog/How to Kontribute](http://shiraji.github.io/blog/2016/07/14/how-to-kontribute/)  
-   * 日本のKontributeされている方のブログ記事です。自分はこれを見て始めました。最高です。
+   * 日本のKontributeされている方のブログ記事です。最高です。
 
