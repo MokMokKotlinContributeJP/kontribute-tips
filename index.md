@@ -8,6 +8,13 @@
 * IntelliJ IDEAでUpdate-Dist-Runを行う![](https://user-images.githubusercontent.com/1386930/29066189-6ec53ab8-7c69-11e7-93f1-834c4f64df55.png)
 * [Generate Testがうまく動かないときはJDKのearly access版かpatched jdkを使う](https://youtrack.jetbrains.com/issue/IDEA-170117#comment=27-2065491)
 * [Antのメモリを大きくしないとビルドできないことがあるらしい](http://shiraji.github.io/blog/2016/07/14/how-to-kontribute/)
+* kotlinのプラグインをインストールして再起動した後にプロジェクトを開こうとすると以下のエラーが出ることがある
+ ```
+Cannot Load Project:
+com.intellij.ide.plugins.PluginManager$StartupAbortedException:
+Fatal error initializing plugin org.jetbrains.kotlin
+ ```
+Android Supportプラグインを外すとうまくいく。なぜか。
 
 ## 便利なリンク集
 * [JetBrains/kotlinの開発環境の作り方](https://github.com/JetBrains/kotlin#build-environment-requirements)
