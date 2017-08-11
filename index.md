@@ -20,3 +20,29 @@
 * [Shiraji's Blog/How to Kontribute](http://shiraji.github.io/blog/2016/07/14/how-to-kontribute/)  
    * 日本のKontributeされている方のブログ記事です。最高です。
 
+## 新機能追加
+
+Kotlinで頻出の新機能作成はIntention/Inspection/Quickfixに関するものです。Intention/Inspection/Quickfixの違いは実装前に確認しておくと良いです。どれを実装すれば良いのかわからない場合、SlackやそのIssueで聞いてしまうのも手です。
+
+それぞれの機能追加の場合、以下のファイルの追加・変更が必要になります。(Xxxはそれぞれの機能の名前です。xxxはlowerCamelCaseということです。)
+
+### Intention
+
+* idea/src/org/jetbrains/kotlin/idea/intentions/XxxIntention.ktを追加
+* idea/src/META-INF/plugin.xmlにintentionActionタグを追加
+* idea/resources/intentionDescriptions/XxxIntention/description.htmlにIntentionの説明を追加
+* idea/resources/intentionDescriptions/XxxIntention/before.kt.templateとidea/resources/intentionDescriptions/XxxIntention/after.kt.templateを追加
+* idea/testData/intentions/xxxにテストデータを作成
+
+### Inspection
+
+* idea/src/org/jetbrains/kotlin/idea/inspections/にXxxInspection.ktを追加
+* idea/src/META-INF/plugin.xmlにlocalInspectionのタグを追加
+* idea/resources/inspectionDescriptions/Xxx.htmlのInspectionの説明を追加
+* idea/testData/inspectionsLocal/xxxにテストデータを作成(inspectionsLocalが2017年8月現在最新のテスト方法です。)
+
+### Quickfix
+
+* idea/src/org/jetbrains/kotlin/idea/quickfix/XxxFix.ktを作成する
+* idea/src/org/jetbrains/kotlin/idea/quickfix/QuickFixRegistrar.ktの対象のエラーにregisterする
+* idea/testData/quickfix/xxxにテストデータを作成
