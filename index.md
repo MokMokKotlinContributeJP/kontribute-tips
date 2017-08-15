@@ -3,13 +3,16 @@
 [Slack](https://mokmok-kontribute.slack.com)
 
 ## トラブルシューティング
+
 ### ビルド時のトラブル
 * [Unresolved ReferenceなどでビルドできないときはKotlinプラグインを最新のバージョンにする](https://github.com/JetBrains/kotlin#-installing-the-latest-kotlin-plugin)
 * 同じくUnresolved ReferenceなどでビルドできないときはIntelliJ IDEAでUpdate-Dist-Runを行う![](https://user-images.githubusercontent.com/1386930/29066189-6ec53ab8-7c69-11e7-93f1-834c4f64df55.png)
 * [Antのメモリを大きくしないとビルドできないことがあるらしい](http://shiraji.github.io/blog/2016/07/14/how-to-kontribute/)
+
 ### 開発時のトラブル
 * Kotlinのプロジェクトが読み込めない時はAndroid Supportプラグインを無効にするとなぜか読み込める
   * エラー内容：Cannot Load Project:com.intellij.ide.plugins.PluginManager$StartupAbortedException:Fatal error initializing plugin org.jetbrains.kotlin
+
 ### テスト時のトラブル
 * [Generate Testがうまく動かないときはJDKのearly access版かpatched jdkを使う](https://youtrack.jetbrains.com/issue/IDEA-170117#comment=27-2065491)
   * File > Project Structure > SDKsに追加したJDKを追加して、Edit Configurationsを開き、JREを先ほどのJDKにしてビルドすればエラーでなくなる。
