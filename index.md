@@ -53,3 +53,14 @@ Kotlinで頻出の新機能作成はIntention/Inspection/Quickfixに関するも
 * idea/src/org/jetbrains/kotlin/idea/quickfix/XxxFix.ktを作成する
 * idea/src/org/jetbrains/kotlin/idea/quickfix/QuickFixRegistrar.ktの対象のエラーにregisterする
 * idea/testData/quickfix/xxxにテストデータを作成
+
+### Ant -> Gradleへの変更点
+
+2017/09/20あたりからビルドツールとしてAntからGradleを使うようになりました。以下が主な変更点です。
+
+* Intellij IDEA 2017.3以上を使う。2017.1でも動くとのこと
+* Kotlin plugin 1.1.50以上のStableを使う。過去のdev周りの設定を外した方が良いかも？
+* IDEAをRunするタイミングで旧ant distが実施されるようになった
+* テスト実行時のWorking directoryの設定が必要なくなった。GradleのDelegate IDE build/run actions to Gradleをチェックする必要があり
+* テスト実行はクラスやメソッドの左横にある緑の>をクリック
+* IDEAの起動(IDEA), テストケース生成(Generate Tests)はRun Configurationに存在
